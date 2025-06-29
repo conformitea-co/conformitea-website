@@ -11,7 +11,7 @@
     "tailwindcss": "^4.1.11"
   },
   "scripts": {
-    "build-css": "tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/main.css --watch",
+    "build-css": "tailwindcss -i ./assets/css/main.css -o ./assets/css/main.css --watch",
     "build": "hugo",
     "dev": "hugo server"
   }
