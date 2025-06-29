@@ -1,0 +1,22 @@
+baseURL      = "https://conformitea.co/"
+languageCode = "en-us"
+title        = "ConformiTea"
+
+[params]
+env = "production"
+
+[taxonomies]
+# Disable all taxonomies (categories, tags, etc.)
+
+[outputs]
+home = ["HTML"]
+
+[build]
+[build.buildStats]
+enable = true
+[[build.cachebusters]]
+source = 'assets/notwatching/hugo_stats\.json'
+target = 'css'
+[[build.cachebusters]]
+source = '(postcss|tailwind)\.config\.js'
+target = 'css'
